@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuroHub - Download de Jogos para PC</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">
+            <img src="logo.ico" alt="KuroHub Logo"> 
+            KuroHub
+        </div>
+        <nav>
+            <ul id="menu-categorias">
+                <li><a href="#" class="btn-categoria active" data-categoria="todos">Início</a></li>
+                <li><a href="#" class="btn-categoria" data-categoria="terror psicológico">Terror Psicológico</a></li>
+                <li><a href="#" class="btn-categoria" data-categoria="corrida">Corrida</a></li>
+                <li><a href="#" class="btn-categoria" data-categoria="acao">Ação</a></li>
+                <li><a href="#" class="btn-categoria" data-categoria="estrategia">Estratégia</a></li>
+            </ul>
+        </nav>
+        <div class="busca-box">
+            <input type="text" id="campo-busca" placeholder="Buscar jogo...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DESTAQUE -->
+    <section class="hero">
+        <p>Baixe os melhores jogos de PC de forma rápida, segura e totalmente simplificada. Atualizações diárias!</p>
+        <a href="#jogos" class="btn-cta"><i class="fa-solid fa-gamepad"></i> Explorar Jogos</a>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container" id="jogos">
+        <h2 class="titulo-secao" id="titulo-pagina">Adicionados Recentemente</h2>
+        
+        <div class="games-grid" id="grid-jogos">
+            <!-- Card de Jogo 1 -->
+            <div class="game-card" data-genero="terror psicológico">
+                <img src="miside.jpg" alt="MiSide" class="game-thumb">
+                <div class="game-info">
+                    <div class="game-title">MiSide</div>
+                    <div class="game-category">terror psicológico</div>
+                    <a href="miside.html" class="btn-download"><i class="fa-solid fa-download"></i> Ver Jogo</a>
+                </div>
+            </div>
+
+            <!-- Card de Jogo 2 -->
+            <div class="game-card" data-genero="corrida">
+                <img src="https://unsplash.com" alt="Turbo Horizon X" class="game-thumb">
+                <div class="game-info">
+                    <div class="game-title">Turbo Horizon X</div>
+                    <div class="game-category">Corrida</div>
+                    <a href="#" class="btn-download"><i class="fa-solid fa-download"></i> Baixar</a>
+                </div>
+            </div>
+
+            <!-- Card de Jogo 3 -->
+            <div class="game-card" data-genero="acao">
+                <img src="https://unsplash.com" alt="Shadow Warrior" class="game-thumb">
+                <div class="game-info">
+                    <div class="game-title">Shadow Warrior</div>
+                    <div class="game-category">Ação</div>
+                    <a href="#" class="btn-download"><i class="fa-solid fa-download"></i> Baixar</a>
+                </div>
+            </div>
+
+            <!-- Card de Jogo 4 -->
+            <div class="game-card" data-genero="estrategia">
+                <img src="https://unsplash.com" alt="Kingdoms & Castles" class="game-thumb">
+                <div class="game-info">
+                    <div class="game-title">Kingdoms & Castles</div>
+                    <div class="game-category">Estratégia</div>
+                    <a href="#" class="btn-download"><i class="fa-solid fa-download"></i> Baixar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 <span>KuroHub</span>. Todos os direitos reservados. Feito para gamers.</p>
+    </footer>
+
+    <!-- Arquivo JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
