@@ -7,7 +7,8 @@
     <link rel="icon" type="image/x-icon" href="logo.ico">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<!-- Adicionado o atributo para o JavaScript identificar o gênero do MiSide -->
+<body data-genero-atual="terror">
 
     <!-- CABEÇALHO -->
     <header>
@@ -59,7 +60,7 @@
         <section class="secao-interna">
             <h2 class="subtitulo-jogo">Sobre o Jogo</h2>
             <p class="texto-descricao">
-                Em MiSide, você acompanha a jornada de um protagonista que misteriosamente é transportado para dentro de um jogo de simulação que estava jogando em seu celular. Lá, ele encontra a carismática e misteriosa Mita. O que parecia ser um sonho fofo rapidamente se transforma em uma experiência psicológica intensa, cheia de enigmas, suspense e reviravoltas que desafiam a sua percepção da realidade.
+                Em MiSide, você acompanha a jornada de um protagonist que misteriosamente é transportado para dentro de um jogo de simulação que estava jogando em seu celular. Lá, ele encontra a carismática e misteriosa Mita. O que parecia ser um sonho fofo rapidamente se transforma em uma experiência psicológica intensa, cheia de enigmas, suspense e reviravoltas que desafiam a sua percepção da realidade.
             </p>
         </section>
 
@@ -104,24 +105,73 @@
             </div>
         </section>
 
-        <!-- Seção de Links para Download -->
+        <!-- Requisitos do Sistema -->
+        <section class="secao-interna">
+            <h2 class="subtitulo-jogo">Requisitos do Sistema</h2>
+            <div class="requisitos-grid">
+                <!-- Mínimos -->
+                <div class="requisitos-box">
+                    <h3>Mínimos</h3>
+                    <ul>
+                        <li><strong>SO:</strong> Windows 10 (64-bit)</li>
+                        <li><strong>Processador:</strong> Intel Core i3-6100 / AMD FX-8350</li>
+                        <li><strong>Memória:</strong> 8 GB de RAM</li>
+                        <li><strong>Placa de vídeo:</strong> NVIDIA GTX 750 Ti / AMD Radeon R9 270X</li>
+                        <li><strong>Armazenamento:</strong> 4 GB de espaço disponível</li>
+                    </ul>
+                </div>
+                <!-- Recomendados -->
+                <div class="requisitos-box">
+                    <h3>Recomendados</h3>
+                    <ul>
+                        <li><strong>SO:</strong> Windows 10/11 (64-bit)</li>
+                        <li><strong>Processador:</strong> Intel Core i5-8400 / AMD Ryzen 5 2600</li>
+                        <li><strong>Memória:</strong> 16 GB de RAM</li>
+                        <li><strong>Placa de vídeo:</strong> NVIDIA GTX 1060 (6GB) / AMD RX 580</li>
+                        <li><strong>Armazenamento:</strong> 4 GB de espaço disponível (Recomendável SSD)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE DOWNLOADS (Ajustada com a moldura visual correta) -->
         <section class="secao-interna" id="links-download">
             <h2 class="subtitulo-jogo">Links para Download</h2>
             <div class="links-grid">
-                <a href="#" class="link-download-card">
-                    <div class="link-icon"><i class="fa-solid fa-circle-down"></i></div>
-                    <div class="link-texto">
-                        <h4>Download Via Torrent</h4>
-                        <p>Opção mais rápida e recomendada para conexões instáveis.</p>
-                    </div>
-                </a>
-                <a href="#" class="link-download-card">
+                <!-- Download Direto (Servidor Local) -->
+                <a href="MiSide.v0.93L.zip" download class="link-download-card">
                     <div class="link-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
                     <div class="link-texto">
-                        <h4>Download Servidor Direto (MediaFire / Mega)</h4>
-                        <p>Baixe diretamente pelo seu navegador de forma simples.</p>
+                        <h4>Download Direto Premium</h4>
+                        <p>Baixe o jogo compactado direto do nosso servidor na velocidade máxima.</p>
                     </div>
                 </a>
+                
+                <!-- Download Via Tera box-->
+                <a href="https://www.1024tera.com/portuguese/sharing/link?surl=GewRqzICQkLAQdi8HDagug" target="_blank" class="link-download-card">
+                    <div class="link-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <div class="link-texto">
+                        <h4>Download Via TeraBox (Nuvem)</h4>
+                        <p>Baixe com segurança através da sua conta TeraBox sem limites de velocidade.</p>
+                        <p>Contem tambem a versão alfa de MiSide Zero</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- NOVA SEÇÃO: JOGOS SEMELHANTES (AUTOMÁTICA VIA JS) -->
+        <section class="secao-interna">
+            <h2 class="subtitulo-jogo">Jogos Semelhantes</h2>
+            <div class="games-grid" id="jogos-semelhantes">
+                <!-- O script.js vai preencher automaticamente com "The Karaoke" aqui -->
+            </div>
+        </section>
+
+        <!-- NOVA SEÇÃO: JOGOS SEMELHANTES (AUTOMÁTICA VIA JS) -->
+        <section class="secao-interna">
+            <h2 class="subtitulo-jogo">Jogos Semelhantes</h2>
+            <div class="games-grid" id="jogos-semelhantes">
+                <!-- O script.js vai preencher automaticamente com "The Karaoke" aqui -->
             </div>
         </section>
 
@@ -132,5 +182,7 @@
         <p>&copy; 2026 <span>KuroHub</span>. Todos os direitos reservados. Feito para gamers.</p>
     </footer>
 
+    <!-- Vinculação do script necessária para rodar o filtro automático -->
+    <script src="script.js"></script>
 </body>
 </html>
