@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuroHub - Download de Jogos para PC</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="tela-anuncio">
+    <video id="video-anuncio" autoplay muted playsinline>
+        <source src="anuncio.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+</div>
+
+    <header>
+        <button id="alternar-tema" type="button" aria-label="Alternar tema">
+            ☀️
+        </button>
+
+
+        <div class="logo">
+            <img src="logo.ico" alt="KuroHub Logo"> 
+            KuroHub
+        </div>
+
+        <!--Essa tag nav foi feita cm o auxilio de IA-->
+        <nav>
+            <ul id="menu-categorias">
+                <li><a href="#" class="btn-categoria active" data-categoria="todos">Início</a></li>
+                <li><a href="#" class="btn-categoria" data-categoria="terror">Terror</a></li>
+                <li><a href="#" class="btn-categoria" data-categoria="rpg">RPG</a></li>
+                <li><a href="#" class="btn-categoria" data-categoria="aventura">Aventura</a></li>
+            </ul>
+        </nav>
+        <div class="busca-box">
+            <input type="text" id="campo-busca" placeholder="Buscar jogo... digite 🅺">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="ordenacao">
+    <select id="ordenar-jogos">
+        <option value="padrao">Ordem padrão</option>
+        <option value="az">Nome (A–Z)</option>
+        <option value="za">Nome (Z–A)</option>
+    </select>
+</div>
+    </header>
+
+    <!-- SEÇÃO DESTAQUE -->
+    <section class="hero">
+        <p>Baixe os melhores jogos de PC de forma rápida, segura e totalmente simplificada.</p>
+        <a href="#jogos" class="btn-cta"><i class="fa-solid fa-gamepad"></i> Explorar Jogos</a>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container" id="jogos">
+        <h2 class="titulo-secao" id="titulo-pagina">Adicionados Recentemente</h2>
+        
+       <div class="games-grid" id="grid-jogos">
+
+        <p id="mensagem-vazia" class="hidden">
+            Nenhum jogo encontrado.
+        </p>
+
+             <!-- MiSide -->
+            <div class="game-card" data-genero="terror">
+                <img src="miside.jpg" alt="MiSide" class="game-thumb">
+                <div class="game-info">
+                    <div class="game-title">MiSide</div>
+                    <div class="game-category">terror psicológico</div>
+                    <a href="miside.html" class="btn-download"><i class="fa-solid fa-download"></i> Ver Jogo</a>
+                </div>
+            </div>  
+
+            <!-- The Karaoke -->
+            <div class="game-card" data-genero="terror">
+                <img src="karaoke.jpg" alt="The Karaoke" class="game-thumb">
+                <div class="game-info">
+                    <div class="game-title">The Karaoke</div>
+                    <div class="game-category">terror</div>
+                    <a href="tkaraoke.html" class="btn-download"><i class="fa-solid fa-download"></i> Ver jogo</a>
+                </div>
+            </div>
+
+            
+            <!-- Persona 5 Royal -->
+            <div class="game-card" data-genero="rpg">
+                <img src="persona.jpg" alt="Persona 5 Royal" class="game-thumb">
+                <div class="game-info">
+                    <div class="game-title">Persona 5 Royal</div>
+                    <div class="game-category">RPG japonês</div>
+                    <a href="persona.html" class="btn-download">Ver Jogo</a>
+                </div>
+            </div>
+
+            <!-- DAVE THE DIVER -->
+            <div class="game-card" data-genero="aventura">
+                <img src="dave.jpg" alt="DAVE THE DIVER" class="game-thumb">
+                <div class="game-info">
+                    <div class="game-title">DAVE THE DIVER</div>
+                    <div class="game-category">Aventura e simulação</div>
+                    <a href="dave.html" class="btn-download">Ver Jogo</a>
+                </div>
+            </div>
+
+</div>
+    </main>
+
+    <footer>
+        <p><span>KuroHub</span>/ Site feito para trabalho escolar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

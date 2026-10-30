@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuroHub - Baixar The Karaoke para PC</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-genero-atual="terror">
+
+    <header>
+        <button id="alternar-tema" type="button" aria-label="Alternar tema">
+            ☀️
+        </button>
+
+        <div class="logo">
+            <img src="logo.ico" alt="KuroHub Logo"> 
+            KuroHub
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#jogos">Terror</a></li>
+                <li><a href="index.html#jogos">RPG</a></li>
+                <li><a href="index.html#jogos">Aventura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-jogo">
+        
+        <div class="topo-jogo">
+            <div class="capa-container">
+                <img src="karaoke.jpg" alt="Capa The Karaoke" class="jogo-capa-interna">
+            </div>
+
+            <div class="detalhes-rapidos">
+                <h1 class="titulo-jogo-interno">The Karaoke | ヒトカラ</h1>
+                <p class="tagline-jogo">Uma saída casual para cantar se transforma em um pesadelo psicológico claustrofóbico e aterrorizante.</p>
+                
+                <div class="info-meta">
+                    <p><strong><i class="fa-solid fa-tags"></i> Gênero:</strong> <span class="destaque-azul">Terror Psicológico</span></p>
+                    <p><strong><i class="fa-solid fa-calendar-days"></i> Lançamento:</strong> 2023</p>
+                    <p><strong><i class="fa-solid fa-language"></i> Idiomas:</strong> Inglês, Japonês (Legendas em PT-BR inclusas)</p>
+                    <p><strong><i class="fa-solid fa-weight-hanging"></i> Tamanho:</strong> 8 GB</p>
+                </div>
+
+                <a href="#links-download" class="btn-cta btn-jogar-agora">
+                    <i class="fa-solid fa-download"></i> Ir para Downloads
+                </a>
+            </div>
+        </div>
+
+        <section class="secao-interna">
+            <h2 class="subtitulo-jogo">Sobre o Jogo</h2>
+            <p class="texto-descricao">
+                Desenvolvido pelos mestres do horror japonês moderno, Chilla's Art, The Karaoke coloca você no papel de uma estudante de ensino médio que decide ir sozinha a um estabelecimento de karaokê à noite. O jogo utiliza uma estética sombria inspirada em fitas de vídeo antigas (estilo VHS film) para criar uma atmosfera sufocante e imersiva. Explore o cenário, resolva quebra-cabeças e tome decisões rápidas, pois cada escolha pode te guiar para um dos 6 finais diferentes disponíveis nesta perturbadora jornada de sobrevivência.
+            </p>
+        </section>
+
+        <!--Introdução do video para o trailer feito com o auxilio de IA-->
+        <section class="secao-interna">
+            <h2 class="subtitulo-jogo">Trailer Oficial</h2>
+            <div class="video-container">
+                <video controls preload="metadata" poster="https://unsplash.com">
+                    <source src="tkaraoke.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeos HTML5.
+                </video>
+            </div>
+        </section>
+
+        <section class="secao-interna">
+            <h2 class="subtitulo-jogo">Requisitos do Sistema</h2>
+            <div class="requisitos-grid">
+                <div class="requisitos-box">
+                    <h3>Mínimos</h3>
+                    <ul>
+                        <li><strong>SO:</strong> Windows 7 SP1+ (64-bit)</li>
+                        <li><strong>Processador:</strong> Arquitetura Intel/AMD X64 com suporte a SSE2</li>
+                        <li><strong>Memória:</strong> 4 GB de RAM</li>
+                        <li><strong>Placa de vídeo:</strong> NVIDIA GTX 460 ou equivalente da AMD</li>
+                        <li><strong>DirectX:</strong> Versão 11</li>
+                        <li><strong>Armazenamento:</strong> 8 GB de espaço disponível</li>
+                    </ul>
+                </div>
+                <div class="requisitos-box">
+                    <h3>Recomendados</h3>
+                    <ul>
+                        <li><strong>SO:</strong> Windows 11 (64-bit)</li>
+                        <li><strong>Processador:</strong> Intel Core i7-4770K ou equivalente da AMD</li>
+                        <li><strong>Memória:</strong> 8 GB de RAM</li>
+                        <li><strong>Placa de vídeo:</strong> NVIDIA GTX 950 ou equivalente da AMD</li>
+                        <li><strong>DirectX:</strong> Versão 12</li>
+                        <li><strong>Armazenamento:</strong> 8 GB de espaço disponível</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-interna" id="links-download">
+            <h2 class="subtitulo-jogo">Links para Download</h2>
+            <div class="links-grid">
+
+                <a href="https://www.1024tera.com/portuguese/sharing/link?surl=T923CGdScbKC13OZjupm-A" target="_blank" class="link-download-card">
+                    <div class="link-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <div class="link-texto">
+                        <h4>Download Via TeraBox (Nuvem)</h4>
+                        <p>Baixe com segurança através da sua conta TeraBox sem limites de velocidade.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section class="secao-interna">
+            <h2 class="subtitulo-jogo">Jogos Semelhantes</h2>
+            <div class="games-grid" id="jogos-semelhantes">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><span>KuroHub</span>/ Site feito para trabalho escolar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
